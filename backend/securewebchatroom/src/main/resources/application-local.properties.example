@@ -5,7 +5,7 @@
 DB_HOST=aws-0-eu-west-1.pooler.supabase.com
 DB_PORT=5432
 DB_USER=postgres.avugyodnszczlkorqcph
-DB_PASSWORD=Beezlecracking69!
+DB_PASSWORD=your-database-password-here
 
 # Any long random text, at least 32 characters
 JWT_SECRET=change-this-to-a-long-random-text-at-least-32-chars
