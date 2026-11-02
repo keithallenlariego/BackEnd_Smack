@@ -1,4 +1,4 @@
-﻿package com.example.securewebchatroom.config;
+package com.example.securewebchatroom.config;
 
 import com.example.securewebchatroom.security.JwtAuthFilter;
 import com.example.securewebchatroom.security.JwtService;
