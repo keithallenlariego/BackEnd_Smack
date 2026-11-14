@@ -63,9 +63,9 @@ public class SecurityConfig {
 
     // Lets the React dev server (http://localhost:5173) call this API.
     @Bean
-    public CorsConfigurationSource corsConfigurationSource(@Value("${app.cors.allowed-origin}") String origin) {
-        CorsConfiguration config = new CorsConfiguration();
-        config.setAllowedOrigins(List.of(origin));
+    public CorsConfigurationSource corsConfigurationSource(@Value("${app.cors.allowed-origin}") String origins) {
+    CorsConfiguration config = new CorsConfiguration();
+    config.setAllowedOrigins(List.of(origins.split(",")));
         config.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "OPTIONS"));
         config.setAllowedHeaders(List.of("*"));
         UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
